@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html  DIR=ltr >
+<head>
+<title>Color Circles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="CanvasColorCircles.css" rel="stylesheet" type="text/css"/>
+<script  type="text/javascript" src="rpcl-bin/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="CanvasColorCircles.js"></script>
+</head>
+<body id="ColorCirclesPage"   onload="return bUpdateJSClick(event)" >
+<form id="ColorCirclesPage_form" name="ColorCirclesPage_form" method="post"   action="/CanvasColorCircles.php"><input type="hidden" name="serverevent" value=""><input type="hidden" name="serverparams" value=""><input type="hidden" name="eTop_hidden" value="rgba(255, 0, 0, 0.66)"><input type="hidden" name="eRight_hidden" value="rgba(0, 255, 0, 0.66)"><input type="hidden" name="eLeft_hidden" value="rgba(0, 0, 255, 0.66)"><input type="hidden" name="eInner_hidden" value="white"><input type="hidden" name="eOuter_hidden" value="black">
+<table id="ColorCirclesPage_table"><tr><td>
+<div id="ColorCircles_outer"  >
+<canvas id="ColorCircles"  width="371" height="305">Your web browser does not support the HTML5 canvas element.</canvas>
+
+</div>
+<div id="eTop_outer"  >
+<input type="text" id="eTop" name="eTop" value="rgba(255, 0, 0, 0.66)"        tabindex="0"  onkeydown="return JSKeyDown(event)"         />
+</div>
+<div id="eRight_outer"  >
+<input type="text" id="eRight" name="eRight" value="rgba(0, 255, 0, 0.66)"        tabindex="0"  onkeydown="return JSKeyDown(event)"         />
+</div>
+<div id="eLeft_outer"  >
+<input type="text" id="eLeft" name="eLeft" value="rgba(0, 0, 255, 0.66)"        tabindex="0"  onkeydown="return JSKeyDown(event)"         />
+</div>
+<div id="bUpdate_outer"  >
+<input type="button" name="bUpdate" value="Update"  onclick="return bUpdateJSClick(event)"    tabindex="0"   id='bUpdate'    />
+</div>
+<div id="lTop_outer"  >
+<div id="lTop"     >Top Circle Color</div>
+</div>
+<div id="lRight_outer"  >
+<div id="lRight"     >Right Circle Color</div>
+</div>
+<div id="lLeft_outer"  >
+<div id="lLeft"     >Left Circle Color</div>
+</div>
+<div id="lHelp_outer"  >
+<div id="lHelp"     ><P>Change the <A href="http://en.wikipedia.org/wiki/Web_colors">web colors </A>of the circles and click <STRONG>Update</STRONG> (or hit <EM>Enter</EM>) to refresh the canvas.</P></div>
+</div>
+<div id="bSave_outer"  >
+<input type="button" name="bSave" value="Save As Image"  onclick="return bSaveJSClick(event)"    tabindex="0"   id='bSave'    />
+</div>
+<div id="eInner_outer"  >
+<input type="text" id="eInner" name="eInner" value="white"        tabindex="0"  onkeydown="return JSKeyDown(event)"         />
+</div>
+<div id="lInner_outer"  >
+<div id="lInner"     >Inner Background Color</div>
+</div>
+<div id="eOuter_outer"  >
+<input type="text" id="eOuter" name="eOuter" value="black"        tabindex="0"  onkeydown="return JSKeyDown(event)"         />
+</div>
+<div id="lOuter_outer"  >
+<div id="lOuter"     >Outer Background Color</div>
+</div>
+</td></tr></table>
+</form></body>
+</html>
+<!-- ColorCirclesPage end -->

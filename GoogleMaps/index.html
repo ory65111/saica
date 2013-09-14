@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html  DIR=ltr >
+<head>
+<title>MPage2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=720, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script src="rpcl-bin/jquerymobile/js/base64.js"></script>
+<script src="rpcl-bin/jquery/jquery-1.7.1.min.js"></script>
+<script src="rpcl-bin/jquerymobile/js/functions.js"></script>
+<link rel="stylesheet" href="rpcl-bin/jquerymobile/css/jquery.mobile-1.1.1.css" />
+<script>
+jQuery(document).bind('mobileinit', function(){
+  jQuery.extend(jQuery.mobile , {
+    loadingMessage: 'Loading',
+    pageLoadErrorMessage: 'Error Loading Page',
+    autoInitialize: true,
+    defaultPageTransition: 'slide',
+    subPageUrlKey: 'ui-page',
+    activePageClass: 'ui-page-active',
+    activeBtnClass: 'ui-btn-active',
+    minScrollBack: 150,
+    touchOverflowEnabled:true 
+  });
+  jQuery.mobile.page.prototype.options.degradeInputs.range='text';
+});</script>
+<script src="rpcl-bin/jquerymobile/js/jquery.mobile-1.1.1.js"></script>
+<link rel="stylesheet" href="rpcl-bin/jquerymobile/css/jquery.general.css" />
+<script src="rpcl-bin/jquerymobile/js/cordova-1.8.1.js"></script>
+<script src="rpcl-bin/jquerymobile/js/phonegap.mobile.js"></script>
+</head>
+<body   onload="return MPage2Load(event)" >
+<div data-role="page"  id="MPage2"  >
+
+         <script type="text/javascript" src="rpcl-bin/jquerymobile/js/jquery.ui.map.js" charset="UTF-8"></script>
+         <script type="text/javascript" src="rpcl-bin/jquerymobile/js/jquery.ui.map.extensions.js" charset="UTF-8"></script>
+         <script type="text/javascript" src="rpcl-bin/jquerymobile/js/jquery.ui.map.services.js" charset="UTF-8"></script>
+
+
+
+         <link id="MPage2_css" rel="stylesheet" href="GoogleMap.css" />
+<script type="text/javascript" src="GoogleMap.js"></script>
+<script id="MPage2_js" src="GoogleMap_php.js"></script>
+<form id="MPage2_form" name="MPage2_form" method="post"   target="_self"  action="/GoogleMap.php"><input type="hidden" name="serverevent" value=""><input type="hidden" name="serverparams" value="">
+<table id="MPage2_table"><tr><td>
+<div id="MMap1_outer" style="display: inline;" >
+        <div id="MMap1_border" class="ui-map-wrap ui-bar-c ui-corner-all ui-shadow ui-map-border" data-fixedsize="true"  >
+         <div id="MMap1" class="ui-map"></div>
+        </div>
+        
+</div>
+</td></tr></table>
+</form></div>
+</body>
+</html>
+<!-- MPage2 end -->

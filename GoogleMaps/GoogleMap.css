@@ -1,0 +1,35 @@
+#MPage2 {
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+}
+#MPage2 #MPage2_form {
+margin-bottom: 0px;
+}
+#MPage2 #MPage2_table {
+width: 720px;
+height: 1280px;
+border-width:0;
+border-collapse:separate;
+}
+#MPage2 #MPage2_table td, #MPage2 #MPage2_table th {
+padding:0;
+vertical-align:top;
+}
+#MPage2 #MMap1_outer {
+z-index: 0;
+left: 54px;
+width: 597px;
+height: 600px;
+position: absolute;
+top: 195px;
+
+}
+#MPage2 #MMap1_border{ 
+box-sizing:border-box;
+width: 597px;
+height: 600px;
+} 
+#MPage2 #MMap1_border{ 
+} 
