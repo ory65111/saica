@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html  DIR=ltr >
+<head>
+<title>Home Cinema</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="MediaHomeCinema.css" rel="stylesheet" type="text/css"/>
+<script  type="text/javascript" src="rpcl-bin/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="MediaHomeCinema.js"></script>
+</head>
+<body id="HomeCinemaPage"   onload="return HomeCinemaPageJSLoad(event)" >
+<form id="HomeCinemaPage_form" name="HomeCinemaPage_form" method="post"   action="/MediaHomeCinema.php"><input type="hidden" name="serverevent" value=""><input type="hidden" name="serverparams" value=""><input type="hidden" id="iElephantsDreamSubmitEvent" name="iElephantsDreamSubmitEvent" value="" /><input type="hidden" id="iBigBuckBunnySubmitEvent" name="iBigBuckBunnySubmitEvent" value="" /><input type="hidden" id="iSintelSubmitEvent" name="iSintelSubmitEvent" value="" /><input type="hidden" id="lElephantsDreamSubmitEvent" name="lElephantsDreamSubmitEvent" value="" /><input type="hidden" id="lBigBuckBunnySubmitEvent" name="lBigBuckBunnySubmitEvent" value="" /><input type="hidden" id="lSintelSubmitEvent" name="lSintelSubmitEvent" value="" />
+<table id="HomeCinemaPage_table"><tr><td>
+<div id="lTitle_outer"  >
+<div id="lTitle"     >Home Cinema</div>
+</div>
+<div id="mScreen_outer"  >
+<video id="mScreen"  controls  autoplay  poster="images/cinema.jpg"  loop  preload="auto"  >
+<source src="http://docwiki.embarcadero.com/HTML5_Builder/screencasts/e/videos/Sintel.mp4"  type="video/mp4"  />
+<source src="http://docwiki.embarcadero.com/HTML5_Builder/screencasts/e/videos/Sintel.ogv"  type="video/ogg"  />
+<span style="color: white;">Your web browser does not support the HTML5 media player (audio and video HTML5 elements).</span>
+</video>
+</div>
+<div id="bFullscreen_outer"  >
+<input type="button" name="bFullscreen" value="Fullscreen"  onclick="return bFullscreenJSClick(event)"    tabindex="0"   id='bFullscreen'    />
+</div>
+<div id="iSintel_outer"  >
+<div id="iSintel_container" >
+<img id="iSintel" src="http://www.sintel.org/wp-content/uploads/2010/06/02.d_comp_000411-200x95.jpg"   alt=""   onclick="return loadSintelWrapper(event, $('#iSintelSubmitEvent').get(0), 'iSintel_loadSintel')"  /></div>
+</div>
+<div id="iBigBuckBunny_outer"  >
+<div id="iBigBuckBunny_container" >
+<img id="iBigBuckBunny" src="http://peach.blender.org/wp-content/uploads/bbb-splash.thumbnail.png"   alt=""   onclick="return loadBigBuckBunnyWrapper(event, $('#iBigBuckBunnySubmitEvent').get(0), 'iBigBuckBunny_loadBigBuckBunny')"  /></div>
+</div>
+<div id="iElephantsDream_outer"  >
+<div id="iElephantsDream_container" >
+<img id="iElephantsDream" src="http://orange.blender.org/wp-content/themes/orange/images/media/gallery/s5_both_t.jpg"   alt=""   onclick="return loadElephantsDreamWrapper(event, $('#iElephantsDreamSubmitEvent').get(0), 'iElephantsDream_loadElephantsDream')"  /></div>
+</div>
+<div id="lSintel_outer"  >
+<div id="lSintel"      onclick="return loadSintelWrapper(event, $('#lSintelSubmitEvent').get(0), 'lSintel_loadSintel', lSintelJSClick)" >Sintel</div>
+</div>
+<div id="lBigBuckBunny_outer"  >
+<div id="lBigBuckBunny"      onclick="return loadBigBuckBunnyWrapper(event, $('#lBigBuckBunnySubmitEvent').get(0), 'lBigBuckBunny_loadBigBuckBunny', lBigBuckBunnyJSClick)" >Big Buck Bunny</div>
+</div>
+<div id="lElephantsDream_outer"  >
+<div id="lElephantsDream"      onclick="return loadElephantsDreamWrapper(event, $('#lElephantsDreamSubmitEvent').get(0), 'lElephantsDream_loadElephantsDream', lElephantsDreamJSClick)" >Elephants Dream</div>
+</div>
+<div id="lHelp_outer"  >
+<div id="lHelp"     ><P><EM>Click</EM> on any of the <STRONG>movie scenes</STRONG> to load the film on the <STRONG>media player</STRONG>.</P></div>
+</div>
+</td></tr></table>
+</form></body>
+</html>
+<!-- HomeCinemaPage end -->

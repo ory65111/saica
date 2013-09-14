@@ -1,0 +1,12 @@
+earth.jpg and mars.jpg files are in the Public Domain.
+
+Sources and additional information:
+- earth.jpg: http://commons.wikimedia.org/wiki/File:Whole_world_%28Comprossed%29.jpg
+- mars.jpg:  http://commons.wikimedia.org/wiki/File:Mars_G%C3%A9olocalisation.jpg
+
+im-invisible-user.png and im-user.png were designed by the Oxygen Team (http://www.oxygen-icons.org/),
+and may be freely copied under the terms of the version 3 of the GNU LGPL (http://www.gnu.org/copyleft/lesser.html).
+Check http://techbase.kde.org/Projects/Oxygen/Licensing for additional information.
+
+cinema.jpg was taken by Panek, and is available under the Creative Commons Attribution 3.0 Unported license.
+Additional information at http://commons.wikimedia.org/wiki/File:Siedzenia_w_kinotece.jpg

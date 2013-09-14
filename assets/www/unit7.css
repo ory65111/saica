@@ -1,0 +1,32 @@
+#MPage7 {
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+}
+#MPage7 #MPage7_form {
+margin-bottom: 0px;
+}
+#MPage7 #MPage7_table {
+width: 768px;
+height: 1024px;
+border-width:0;
+border-collapse:separate;
+}
+#MPage7 #MPage7_table td, #MPage7 #MPage7_table th {
+padding:0;
+vertical-align:top;
+}
+#MPage7 #MButton1_outer {
+z-index: 0;
+left: 344px;
+width: 150px;
+height: 43px;
+position: absolute;
+top: 128px;
+
+}
+#MPage7 #MButton1_outer > div{ 
+width: 150px;
+height: 43px;
+} 
